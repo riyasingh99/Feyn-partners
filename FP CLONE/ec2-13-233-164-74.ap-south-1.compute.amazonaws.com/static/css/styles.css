@@ -1,0 +1,238 @@
+@media screen and (max-width:720px){
+    html{
+        display:none;
+    }
+}
+
+html {
+    overflow:hidden;
+}
+
+body {
+
+    background: #F8F8F8;
+    height:100%;
+    overflow:auto;
+    font-family: 'Poppins';font-size: 22px;
+}
+
+
+h4{
+    margin:0vh;
+    padding:0vh;
+    font-size:medium;
+}
+h3{
+    font-weight: normal;
+    margin-top: 5vh;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    width: 100%;
+    /*color: purple;*/
+}
+span{
+    margin:5px 10px 10px;
+    text-align:right;
+    font-weight:bold;
+}
+
+canvas {
+    /* max-width: 50vw;
+    max-height: 50vh; */
+    /* padding: 5px; */
+    /* vertical-align: middle; */
+    text-align: center;
+    /* margin-top: 7vh; */
+    /* border-radius: 15px; */
+}
+
+input[type=submit]{
+    background-color:blue;
+    border:none;
+    /*padding:20px 40px;*/
+    color:#fff;
+    font-weight:bold;
+    border-radius:10px;
+    display:block;
+    font-weight: 700;
+    margin-top: 40px;
+    font-size: xx-large;
+}
+
+input[type=text],input[type=number]{
+    /* height: 7vh; */
+    width: 10vw;
+    /* font-size: large; */
+    font-weight: bolder;
+    border-radius: 10vw 10vw;
+    /*border-radius: 7%;*/
+    text-align: center;
+    /*color: darkolivegreen;*/
+    margin:10px;
+    background:transparent;
+}
+
+
+input[type=text],input[type=number]:focus{
+    height: 7vh;
+}
+table::-webkit-scrollbar {
+    display: none;
+}
+select{
+    /* height: 7vh; */
+    /* font-size: large; */
+    font-weight: bolder;
+    border-radius: 10vw 10vw;
+    /*border-radius: 7%;*/
+    text-align: center;
+    color: darkolivegreen;
+    background:transparent;
+    /* margin: 10px; */
+}
+button{
+    position: relative;
+    /* background-color:#1575FB; */
+    background-color:#18CAC6;
+    border:none;
+    padding:10px 10px;
+    color:#fff;
+    font-weight:bold;
+    border-radius: 20vw 20vw;
+    /*border-radius:5px;*/
+    display:block;
+    font-weight: 700;
+    /* margin-top: 40px; */
+    font-size:small;
+    /* font-family: 'Poppins';font-size: 22px; */
+}
+.hover-msg::after{
+    content: attr(data-title);
+    position: absolute;
+    background: #444;
+    color: #fff;
+    left: 0;
+    top: 90%;
+    font-size: 12px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 300ms;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+    text-align:center;
+}
+.hover-msg:hover::after{
+    opacity: 1;
+    transform: translateY(5px);
+}
+.hover-msg2::after{
+    content: attr(data-title);
+    position: absolute;
+    background: #444;
+    color: #fff;
+    left: 0;
+    top: -200%;
+    font-size: 12px;
+    width: 10vw;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 300ms;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(15px);
+}
+.hover-msg2:hover::after{
+    opacity: 1;
+    transform: translateY(5px);
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+.justify{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+.center{
+    position:fixed;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#first{
+    width:80vw;
+    height:80vh;
+    background:#00FFCC;
+    border-radius: 10px;
+    font-size: medium;
+    z-index: 100;
+}
+
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    width: 50%;
+}
+.field .value {
+    position: absolute;
+    font-size: x-small;
+    color: #045fa4;
+    font-weight: 600;
+}
+.left {
+    left: 1vw;
+}
+.right {
+    right: -3vw;
+}
+.sliderval{
+    font-size: x-small;
+    left: 7vw;
+    color: #ff6600;
+}
+#drawcanvas{
+    position: fixed;
+    left:0;
+    top: 10vh;
+}
+
+.slider {
+    appearance:none;
+    -webkit-appearance: none;
+    height: 2px;
+    background: #ff6600;
+    outline: none;
+    opacity: 0.7;
+}
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #18CAC6;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #18CAC6;
+    cursor: pointer;
+}
